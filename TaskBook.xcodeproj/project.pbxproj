@@ -54,14 +54,22 @@
 		4AB0EE521E59C20B00FED66E /* TaskBook */ = {
 			isa = PBXGroup;
 			children = (
-				4AB0EE531E59C20B00FED66E /* AppDelegate.swift */,
+				4AB0EE651E59C25900FED66E /* App Helpers */,
 				4AB0EE551E59C20B00FED66E /* ViewController.swift */,
 				4AB0EE571E59C20B00FED66E /* Main.storyboard */,
+			);
+			path = TaskBook;
+			sourceTree = "<group>";
+		};
+		4AB0EE651E59C25900FED66E /* App Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4AB0EE531E59C20B00FED66E /* AppDelegate.swift */,
 				4AB0EE5A1E59C20B00FED66E /* Assets.xcassets */,
 				4AB0EE5C1E59C20B00FED66E /* LaunchScreen.storyboard */,
 				4AB0EE5F1E59C20B00FED66E /* Info.plist */,
 			);
-			path = TaskBook;
+			name = "App Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +104,7 @@
 				TargetAttributes = {
 					4AB0EE4F1E59C20B00FED66E = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KUL43KF5MM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,6 +269,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KUL43KF5MM;
 				INFOPLIST_FILE = TaskBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NotesTeam.TaskBook;
@@ -272,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KUL43KF5MM;
 				INFOPLIST_FILE = TaskBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NotesTeam.TaskBook;
