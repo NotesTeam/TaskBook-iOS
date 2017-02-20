@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0B35161E5B678D0000569C /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B35151E5B678D0000569C /* MainModel.swift */; };
 		4AB0EE541E59C20B00FED66E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB0EE531E59C20B00FED66E /* AppDelegate.swift */; };
 		4AB0EE561E59C20B00FED66E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB0EE551E59C20B00FED66E /* ViewController.swift */; };
 		4AB0EE591E59C20B00FED66E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB0EE571E59C20B00FED66E /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A0B35151E5B678D0000569C /* MainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		4AB0EE501E59C20B00FED66E /* TaskBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB0EE531E59C20B00FED66E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AB0EE551E59C20B00FED66E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				4AB0EE651E59C25900FED66E /* App Helpers */,
 				4AB0EE551E59C20B00FED66E /* ViewController.swift */,
 				4AB0EE571E59C20B00FED66E /* Main.storyboard */,
+				4A0B35151E5B678D0000569C /* MainModel.swift */,
 			);
 			path = TaskBook;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			files = (
 				4AB0EE561E59C20B00FED66E /* ViewController.swift in Sources */,
 				4AB0EE541E59C20B00FED66E /* AppDelegate.swift in Sources */,
+				4A0B35161E5B678D0000569C /* MainModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +314,7 @@
 				4AB0EE641E59C20B00FED66E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,28 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var dayNumberLabel: UILabel!
-    @IBOutlet weak var weekdayLabel: UILabel!
+    @IBOutlet private weak var dayNumberLabel: UILabel!
+    @IBOutlet private weak var weekdayLabel: UILabel!
+    
+    private var model = MainModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "MainBackground")!)
         
-        let date = Date()
-//        let calendar = NSCalendar.current
-//        let day = calendar.component(.day, from: date as Date)
-//        let weekday = calendar.component(.weekday,from: date as Date)
-        
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat="EEEE"
-        let weekdayString = dateFormatter.string(from: date)
-        weekdayLabel.text = weekdayString
-        
-        dateFormatter.dateFormat="d"
-        let dayString = dateFormatter.string(from: date)
-        dayNumberLabel.text = dayString
-//        dayNumberLabel.text = String(day)
+        dayNumberLabel.text = model.currentDayNumber
+        weekdayLabel.text = model.currentDayName
         
     }
 
