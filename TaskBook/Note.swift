@@ -12,19 +12,19 @@ class Note {
     
     var id: Int
     var title: String
-    var text: String
+    var content: String
     var date: Double
     var isArchived: Bool
     
-    init?(id: Int, title: String, text: String, date: Double) {
+    init?(id: Int, title: String, content: String, date: Double) {
         
-        guard !title.isEmpty && !text.isEmpty else {
+        guard !title.isEmpty && !content.isEmpty else {
             return nil
         }
         
         self.id = id
         self.title = title
-        self.text = text
+        self.content = content
         self.date = date
         self.isArchived = false
     }

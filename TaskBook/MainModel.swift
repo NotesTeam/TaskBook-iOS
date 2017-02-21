@@ -23,9 +23,10 @@ class MainModel{
     
     var currentDayName: String {
         get {
-            dateFormatter.dateFormat="EEEE"
-            return dateFormatter.string(from: date)
+            dateFormatter.dateFormat="MMMM"
+            return dateFormatter.string(from: date).uppercased()
         }
     }
+    
 
 }
