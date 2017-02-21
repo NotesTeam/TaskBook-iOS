@@ -10,11 +10,13 @@
 		4A0B35161E5B678D0000569C /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B35151E5B678D0000569C /* MainModel.swift */; };
 		4A6C00471E5C957300CE8E85 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C00461E5C957300CE8E85 /* Note.swift */; };
 		4A6C00591E5C984A00CE8E85 /* NoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C00581E5C984A00CE8E85 /* NoteTests.swift */; };
+		4A88C0E31E5CAE5500EF377D /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88C0E21E5CAE5500EF377D /* NoteTableViewCell.swift */; };
 		4AB0EE541E59C20B00FED66E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB0EE531E59C20B00FED66E /* AppDelegate.swift */; };
 		4AB0EE561E59C20B00FED66E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB0EE551E59C20B00FED66E /* ViewController.swift */; };
 		4AB0EE591E59C20B00FED66E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB0EE571E59C20B00FED66E /* Main.storyboard */; };
 		4AB0EE5B1E59C20B00FED66E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB0EE5A1E59C20B00FED66E /* Assets.xcassets */; };
 		4AB0EE5E1E59C20B00FED66E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB0EE5C1E59C20B00FED66E /* LaunchScreen.storyboard */; };
+		4AB706481E5CB0C80050E9DB /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB706471E5CB0C80050E9DB /* NotesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,7 @@
 		4A6C004E1E5C982000CE8E85 /* TaskBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6C00521E5C982000CE8E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A6C00581E5C984A00CE8E85 /* NoteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTests.swift; sourceTree = "<group>"; };
+		4A88C0E21E5CAE5500EF377D /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		4AB0EE501E59C20B00FED66E /* TaskBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB0EE531E59C20B00FED66E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AB0EE551E59C20B00FED66E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		4AB0EE5A1E59C20B00FED66E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AB0EE5D1E59C20B00FED66E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AB0EE5F1E59C20B00FED66E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AB706471E5CB0C80050E9DB /* NotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 				4AB0EE651E59C25900FED66E /* App Helpers */,
 				4AB0EE551E59C20B00FED66E /* ViewController.swift */,
 				4AB0EE571E59C20B00FED66E /* Main.storyboard */,
+				4AB706471E5CB0C80050E9DB /* NotesTableViewController.swift */,
+				4A88C0E21E5CAE5500EF377D /* NoteTableViewCell.swift */,
 				4A0B35151E5B678D0000569C /* MainModel.swift */,
 				4A6C00461E5C957300CE8E85 /* Note.swift */,
 			);
@@ -226,6 +232,8 @@
 				4AB0EE541E59C20B00FED66E /* AppDelegate.swift in Sources */,
 				4A0B35161E5B678D0000569C /* MainModel.swift in Sources */,
 				4A6C00471E5C957300CE8E85 /* Note.swift in Sources */,
+				4A88C0E31E5CAE5500EF377D /* NoteTableViewCell.swift in Sources */,
+				4AB706481E5CB0C80050E9DB /* NotesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
