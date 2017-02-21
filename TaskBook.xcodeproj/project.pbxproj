@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4A0B35161E5B678D0000569C /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B35151E5B678D0000569C /* MainModel.swift */; };
+		4A6C00471E5C957300CE8E85 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C00461E5C957300CE8E85 /* Note.swift */; };
+		4A6C00591E5C984A00CE8E85 /* NoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C00581E5C984A00CE8E85 /* NoteTests.swift */; };
 		4AB0EE541E59C20B00FED66E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB0EE531E59C20B00FED66E /* AppDelegate.swift */; };
 		4AB0EE561E59C20B00FED66E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB0EE551E59C20B00FED66E /* ViewController.swift */; };
 		4AB0EE591E59C20B00FED66E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB0EE571E59C20B00FED66E /* Main.storyboard */; };
@@ -15,8 +17,22 @@
 		4AB0EE5E1E59C20B00FED66E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB0EE5C1E59C20B00FED66E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4A6C00531E5C982000CE8E85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AB0EE481E59C20B00FED66E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AB0EE4F1E59C20B00FED66E;
+			remoteInfo = TaskBook;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		4A0B35151E5B678D0000569C /* MainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		4A6C00461E5C957300CE8E85 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		4A6C004E1E5C982000CE8E85 /* TaskBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A6C00521E5C982000CE8E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A6C00581E5C984A00CE8E85 /* NoteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTests.swift; sourceTree = "<group>"; };
 		4AB0EE501E59C20B00FED66E /* TaskBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB0EE531E59C20B00FED66E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AB0EE551E59C20B00FED66E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4A6C004B1E5C982000CE8E85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AB0EE4D1E59C20B00FED66E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +60,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A6C004F1E5C982000CE8E85 /* TaskBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C00521E5C982000CE8E85 /* Info.plist */,
+				4A6C00581E5C984A00CE8E85 /* NoteTests.swift */,
+			);
+			path = TaskBookTests;
+			sourceTree = "<group>";
+		};
 		4AB0EE471E59C20B00FED66E = {
 			isa = PBXGroup;
 			children = (
 				4AB0EE521E59C20B00FED66E /* TaskBook */,
+				4A6C004F1E5C982000CE8E85 /* TaskBookTests */,
 				4AB0EE511E59C20B00FED66E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				4AB0EE501E59C20B00FED66E /* TaskBook.app */,
+				4A6C004E1E5C982000CE8E85 /* TaskBookTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +94,7 @@
 				4AB0EE551E59C20B00FED66E /* ViewController.swift */,
 				4AB0EE571E59C20B00FED66E /* Main.storyboard */,
 				4A0B35151E5B678D0000569C /* MainModel.swift */,
+				4A6C00461E5C957300CE8E85 /* Note.swift */,
 			);
 			path = TaskBook;
 			sourceTree = "<group>";
@@ -78,6 +113,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4A6C004D1E5C982000CE8E85 /* TaskBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A6C00551E5C982000CE8E85 /* Build configuration list for PBXNativeTarget "TaskBookTests" */;
+			buildPhases = (
+				4A6C004A1E5C982000CE8E85 /* Sources */,
+				4A6C004B1E5C982000CE8E85 /* Frameworks */,
+				4A6C004C1E5C982000CE8E85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A6C00541E5C982000CE8E85 /* PBXTargetDependency */,
+			);
+			name = TaskBookTests;
+			productName = TaskBookTests;
+			productReference = 4A6C004E1E5C982000CE8E85 /* TaskBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4AB0EE4F1E59C20B00FED66E /* TaskBook */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AB0EE621E59C20B00FED66E /* Build configuration list for PBXNativeTarget "TaskBook" */;
@@ -105,6 +158,11 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = NotesTeam;
 				TargetAttributes = {
+					4A6C004D1E5C982000CE8E85 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4AB0EE4F1E59C20B00FED66E;
+					};
 					4AB0EE4F1E59C20B00FED66E = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = KUL43KF5MM;
@@ -126,11 +184,19 @@
 			projectRoot = "";
 			targets = (
 				4AB0EE4F1E59C20B00FED66E /* TaskBook */,
+				4A6C004D1E5C982000CE8E85 /* TaskBookTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4A6C004C1E5C982000CE8E85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AB0EE4E1E59C20B00FED66E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,6 +210,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4A6C004A1E5C982000CE8E85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6C00591E5C984A00CE8E85 /* NoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AB0EE4C1E59C20B00FED66E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,10 +225,19 @@
 				4AB0EE561E59C20B00FED66E /* ViewController.swift in Sources */,
 				4AB0EE541E59C20B00FED66E /* AppDelegate.swift in Sources */,
 				4A0B35161E5B678D0000569C /* MainModel.swift in Sources */,
+				4A6C00471E5C957300CE8E85 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A6C00541E5C982000CE8E85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AB0EE4F1E59C20B00FED66E /* TaskBook */;
+			targetProxy = 4A6C00531E5C982000CE8E85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4AB0EE571E59C20B00FED66E /* Main.storyboard */ = {
@@ -176,6 +259,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4A6C00561E5C982000CE8E85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TaskBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NotesTeam.TaskBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskBook.app/TaskBook";
+			};
+			name = Debug;
+		};
+		4A6C00571E5C982000CE8E85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TaskBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NotesTeam.TaskBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskBook.app/TaskBook";
+			};
+			name = Release;
+		};
 		4AB0EE601E59C20B00FED66E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -298,6 +407,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4A6C00551E5C982000CE8E85 /* Build configuration list for PBXNativeTarget "TaskBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A6C00561E5C982000CE8E85 /* Debug */,
+				4A6C00571E5C982000CE8E85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4AB0EE4B1E59C20B00FED66E /* Build configuration list for PBXProject "TaskBook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
