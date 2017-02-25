@@ -21,7 +21,7 @@ class MainModel{
         }
     }
     
-    var currentDayName: String {
+    var currentMonthName: String {
         get {
             dateFormatter.dateFormat="MMMM"
             return dateFormatter.string(from: date).uppercased()

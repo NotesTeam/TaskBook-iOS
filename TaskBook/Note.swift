@@ -13,24 +13,24 @@ class Note {
     var id: Int
     var title: String
     var content: String
-    var date: Double
+    var date: Date
     var isArchived: Bool
     
-    init?(id: Int, title: String, content: String, date: Double) {
+    init?(title: String, content: String, date: Date) {
         
         guard !title.isEmpty else {
             return nil
         }
         
-        self.id = id
+        self.id = 0
         self.title = title
         self.content = content
         self.date = date
         self.isArchived = false
+        self.id = self.hash(title: title, content: content, date: date)
     }
     
-    
-    
-    
-    
+    public func hash(title: String, content: String, date: Date) -> Int {
+        return (title+content+String(describing: date)).hashValue
+    }
 }

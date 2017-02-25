@@ -13,7 +13,7 @@ import os.log
 class NewNoteController : UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var contentTextField: UITextField!
+    @IBOutlet weak var contentTextField: UITextView!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
     @IBAction func cancelButton(_ sender: UIBarButtonItem) {
@@ -30,6 +30,15 @@ class NewNoteController : UIViewController, UITextFieldDelegate {
         
         // Enable the Save button only if the text field has a valid Meal name.
         updateSaveButtonState()
+        
+        setPaddings()
+    }
+    
+    func setPaddings(){
+        let paddingView = UIView(frame: CGRect(x: 0,y: 0,width: 15,height: self.titleTextField.frame.height))
+        titleTextField.leftView = paddingView
+        titleTextField.leftViewMode = UITextFieldViewMode.always
+        contentTextField.textContainerInset = UIEdgeInsetsMake(10, 10, 0, 0)
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -67,18 +76,12 @@ class NewNoteController : UIViewController, UITextFieldDelegate {
         let title = titleTextField.text ?? ""
         let content = contentTextField.text ?? ""
         
-        note = Note(id: generateId(), title: title, content: content, date: getCurrentDate())
+        note = Note(title: title, content: content, date: getCurrentDate())
         
     }
     
-    private func generateId() -> Int {
-        //TODO implement
-        return 0;
-    }
-    
-    private func getCurrentDate() -> Double {
-        //TODO implement
-        return 0.0;
+    private func getCurrentDate() -> Date {
+        return Date();
     }
     
     

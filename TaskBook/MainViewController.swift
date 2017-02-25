@@ -20,7 +20,7 @@ class MainViewController: UIViewController {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "MainBackground")!)
         
         dayNumberLabel.text = model.currentDayNumber
-        weekdayLabel.text = model.currentDayName
+        weekdayLabel.text = model.currentMonthName
         
     }
 

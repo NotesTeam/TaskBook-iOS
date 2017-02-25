@@ -52,18 +52,17 @@ class NotesTableViewController: UITableViewController {
         return cell
     }
     
-    private func generateReadableDate(timestamp: Double) -> String {
-        let date = Date()
+    private func generateReadableDate(timestamp: Date) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat="EEEE dd MMM YYYY"
-        return dateFormatter.string(from: date)
+        return dateFormatter.string(from: timestamp)
     }
     
     private func loadSampleNotes() {
-        guard let note1 = Note(id: 0, title: "Test", content: "TestTest", date: 1487692550) else {
+        guard let note1 = Note(title: "Test", content: "TestTest", date: Date()) else {
             fatalError("Unable to initzialize note1")
         }
-        guard let note2 = Note(id: 0, title: "Test2", content: "TestTest", date: 1487692550) else {
+        guard let note2 = Note(title: "Test2", content: "TestTest", date: Date()) else {
             fatalError("Unable to initzialize note2")
         }
         notes += [note1, note2]
