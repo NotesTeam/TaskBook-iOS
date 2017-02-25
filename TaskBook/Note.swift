@@ -18,7 +18,7 @@ class Note {
     
     init?(id: Int, title: String, content: String, date: Double) {
         
-        guard !title.isEmpty && !content.isEmpty else {
+        guard !title.isEmpty else {
             return nil
         }
         

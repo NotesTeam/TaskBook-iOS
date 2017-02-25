@@ -94,25 +94,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ugd-aU-s8D">
-                                <rect key="frame" x="16" y="72" width="288" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ugd-aU-s8D">
+                                <rect key="frame" x="16" y="72" width="288" height="48"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Text" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lPj-cU-grh">
-                                <rect key="frame" x="16" y="110" width="288" height="418"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPj-cU-grh">
+                                <rect key="frame" x="16" y="130" width="288" height="398"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.17254901960784313" green="0.11764705882352941" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.98958333330000003" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lPj-cU-grh" firstAttribute="top" secondItem="gk9-QK-5FA" secondAttribute="bottom" constant="46" id="C40-xN-0FS"/>
+                            <constraint firstItem="lPj-cU-grh" firstAttribute="top" secondItem="gk9-QK-5FA" secondAttribute="bottom" constant="66" id="C40-xN-0FS"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Ugd-aU-s8D" secondAttribute="leading" id="DQQ-xW-ucb"/>
+                            <constraint firstItem="lPj-cU-grh" firstAttribute="top" secondItem="Ugd-aU-s8D" secondAttribute="bottom" constant="10" id="QNX-5x-FcG"/>
                             <constraint firstAttribute="leadingMargin" secondItem="lPj-cU-grh" secondAttribute="leading" id="Tvy-dH-8Ln"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lPj-cU-grh" secondAttribute="trailing" id="X1o-4R-53j"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ugd-aU-s8D" secondAttribute="trailing" id="ld8-WN-xfE"/>

@@ -42,6 +42,12 @@ class NewNoteController : UIViewController, UITextFieldDelegate {
         navigationItem.title = textField.text
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        contentTextField.becomeFirstResponder()
+        // Do not add a line break
+        return false
+    }
+    
     private func updateSaveButtonState() {
         //Dsiable the Save button if the text field is empty
         let text = titleTextField.text ?? ""
