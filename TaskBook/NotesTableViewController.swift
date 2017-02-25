@@ -12,6 +12,18 @@ class NotesTableViewController: UITableViewController {
     
     var notes = [Note]()
     
+    @IBAction func unwindToNoteList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? NewNoteController, let note = sourceViewController.note {
+            
+            // Add a new note.
+            let newIndexPath = IndexPath(row: 0, section: 0)
+            
+            notes.insert(note, at: newIndexPath.row)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

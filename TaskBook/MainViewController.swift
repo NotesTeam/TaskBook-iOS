@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     @IBOutlet private weak var dayNumberLabel: UILabel!
     @IBOutlet private weak var weekdayLabel: UILabel!
