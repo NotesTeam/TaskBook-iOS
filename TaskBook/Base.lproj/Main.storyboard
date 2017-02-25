@@ -121,7 +121,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Note" id="cRQ-Tv-Yqv">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="c8B-9K-99e"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="c8B-9K-99e">
+                            <connections>
+                                <action selector="cancelButton:" destination="WxO-MS-jqy" id="TG7-8E-1md"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Gc6-uU-lrC">
                             <connections>
                                 <segue destination="eYy-WI-ofu" kind="unwind" unwindAction="unwindToNoteListWithSender:" id="3hI-ki-6yg"/>

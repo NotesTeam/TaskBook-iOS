@@ -10,13 +10,43 @@ import UIKit
 import os.log
 
 
-class NewNoteController : UIViewController{
+class NewNoteController : UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var contentTextField: UITextField!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
+    @IBAction func cancelButton(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     var note: Note?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Handle the text field’s user input through delegate callbacks.
+        titleTextField.delegate = self
+        
+        // Enable the Save button only if the text field has a valid Meal name.
+        updateSaveButtonState()
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        //Disable the Save button while editing
+        saveButton.isEnabled = false
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        updateSaveButtonState()
+        navigationItem.title = textField.text
+    }
+    
+    private func updateSaveButtonState() {
+        //Dsiable the Save button if the text field is empty
+        let text = titleTextField.text ?? ""
+        saveButton.isEnabled = !text.isEmpty
+    }
     
     
     // Configure a view controller before it's presented
