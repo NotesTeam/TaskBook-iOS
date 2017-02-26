@@ -10,24 +10,26 @@ import Foundation
 
 class Note {
     
-    var id: Int
     var title: String
     var content: String
     var date: Date
     var isArchived: Bool
+    
+    lazy var id: Int = {
+        print("Generate id for Note object")
+        return self.hash(title: self.title, content: self.content, date: self.date)
+    }()
     
     init?(title: String, content: String, date: Date) {
         
         guard !title.isEmpty else {
             return nil
         }
-        
-        self.id = 0
+    
         self.title = title
         self.content = content
         self.date = date
         self.isArchived = false
-        self.id = self.hash(title: title, content: content, date: date)
     }
     
     public func hash(title: String, content: String, date: Date) -> Int {
