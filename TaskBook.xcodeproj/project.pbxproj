@@ -18,6 +18,8 @@
 		4AB0EE5B1E59C20B00FED66E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB0EE5A1E59C20B00FED66E /* Assets.xcassets */; };
 		4AB0EE5E1E59C20B00FED66E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB0EE5C1E59C20B00FED66E /* LaunchScreen.storyboard */; };
 		4AB706481E5CB0C80050E9DB /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB706471E5CB0C80050E9DB /* NotesTableViewController.swift */; };
+		4AD94E2B1E7C4C9400F7532B /* InfoBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD94E2A1E7C4C9400F7532B /* InfoBarController.swift */; };
+		4AD94E2D1E7C4DC000F7532B /* InfoBarLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD94E2C1E7C4DC000F7532B /* InfoBarLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		4AB0EE5D1E59C20B00FED66E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AB0EE5F1E59C20B00FED66E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AB706471E5CB0C80050E9DB /* NotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
+		4AD94E2A1E7C4C9400F7532B /* InfoBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoBarController.swift; sourceTree = "<group>"; };
+		4AD94E2C1E7C4DC000F7532B /* InfoBarLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoBarLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 				4A0B35151E5B678D0000569C /* MainModel.swift */,
 				4A7208961E611774007C79A1 /* NewNoteController.swift */,
 				4A6C00461E5C957300CE8E85 /* Note.swift */,
+				4AD94E2E1E7C4DE100F7532B /* InfoBar */,
 			);
 			path = TaskBook;
 			sourceTree = "<group>";
@@ -117,6 +122,15 @@
 				4AB0EE5F1E59C20B00FED66E /* Info.plist */,
 			);
 			name = "App Helpers";
+			sourceTree = "<group>";
+		};
+		4AD94E2E1E7C4DE100F7532B /* InfoBar */ = {
+			isa = PBXGroup;
+			children = (
+				4AD94E2A1E7C4C9400F7532B /* InfoBarController.swift */,
+				4AD94E2C1E7C4DC000F7532B /* InfoBarLogic.swift */,
+			);
+			name = InfoBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +251,9 @@
 				4A6C00471E5C957300CE8E85 /* Note.swift in Sources */,
 				4A88C0E31E5CAE5500EF377D /* NoteTableViewCell.swift in Sources */,
 				4AB706481E5CB0C80050E9DB /* NotesTableViewController.swift in Sources */,
+				4AD94E2D1E7C4DC000F7532B /* InfoBarLogic.swift in Sources */,
 				4A7208971E611774007C79A1 /* NewNoteController.swift in Sources */,
+				4AD94E2B1E7C4C9400F7532B /* InfoBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

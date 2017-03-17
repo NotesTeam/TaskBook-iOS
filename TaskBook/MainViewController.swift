@@ -10,8 +10,8 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    @IBOutlet private weak var dayNumberLabel: UILabel!
-    @IBOutlet private weak var weekdayLabel: UILabel!
+//    @IBOutlet private weak var dayNumberLabel: UILabel!
+//    @IBOutlet private weak var weekdayLabel: UILabel!
     
     private var model = MainModel()
     
@@ -19,8 +19,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "MainBackground")!)
         
-        dayNumberLabel.text = model.currentDayNumber
-        weekdayLabel.text = model.currentMonthName
+//        dayNumberLabel.text = model.currentDayNumber
+//        weekdayLabel.text = model.currentMonthName
         
     }
 

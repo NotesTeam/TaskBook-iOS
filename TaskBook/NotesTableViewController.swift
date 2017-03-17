@@ -23,7 +23,6 @@ class NotesTableViewController: UITableViewController {
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadSampleNotes()

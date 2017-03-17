@@ -11,22 +11,5 @@ import Foundation
 
 class MainModel{
     
-    private let date = Date()
-    private let dateFormatter = DateFormatter()
-    
-    var currentDayNumber: String {
-        get {
-            dateFormatter.dateFormat="d"
-            return dateFormatter.string(from: date)
-        }
-    }
-    
-    var currentMonthName: String {
-        get {
-            dateFormatter.dateFormat="MMMM"
-            return dateFormatter.string(from: date).uppercased()
-        }
-    }
-    
 
 }
